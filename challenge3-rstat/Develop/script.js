@@ -25,5 +25,11 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);// it'll hear click of a mouse on the button and will activate writePassword function 
+function generatePassword(){ // i created a function generatePassword based on prompts, it is still empty
+var password = "";
+for(var i = 0; i < characterLength; i++){//create iteration that will count up about 1 
+
+}  
+}
 
 
