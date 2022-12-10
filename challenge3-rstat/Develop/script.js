@@ -36,7 +36,20 @@ return password; //it will loop as many time as user wants and return the passwo
 function getPrompts(){//i created a function getPrompts that will be taking prompts 
   choiceArr = []; //calling array to be empty 
 characterLength = parseInt(prompt("How many characters do you want in your password?(8-128)"))// i call the variable that is 8 as minimum 
+if (isNaN(characterLength) || characterLength<8 || characterLength > 128)
+{alert("Try again. 8-128 numbers only");
+return false;
 }
+
+
+
+
+
+
+
+
+}
+
 
 
 
