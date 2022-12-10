@@ -27,11 +27,16 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);// it'll hear click of a mouse on the button and will activate writePassword function 
 function generatePassword(){ // i created a function generatePassword based on prompts, it is still empty
 var password = "";
-for(var i = 0; i < characterLength; i++){//create iteration that will count up about 1 
+for(var i = 0; i < characterLength; i++){//6)create iteration that will count up about 1 
 var randomIndex = Math.floor(Math.random() * choiceArr.length);//pick a random number and make it integer down and the length of choiceArr empty array to be filled up 
 password = password + choiceArr[randomIndex]; 
 }  
 return password; //it will loop as many time as user wants and return the password 
 }
+function getPrompts(){//i created a function getPrompts that will be taking prompts 
+  choiceArr = []; //calling array to be empty 
+characterLength = parseInt(prompt("How many characters do you want in your password?(8-128)"))// i call the variable that is 8 as minimum 
+}
+
 
 
