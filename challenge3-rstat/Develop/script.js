@@ -1,5 +1,6 @@
 // Assignment Code
 var characterLength = 8; //Firstly i made a variable with minimum character length which is 8 and variable characterLength
+var choiceArr = [];//2)I made an empty arrary for outputs, of user's choices
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
