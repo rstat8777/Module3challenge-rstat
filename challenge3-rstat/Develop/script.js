@@ -12,8 +12,13 @@ var generateBtn = document.querySelector("#generate");//4) JS chooses id of a bu
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  
+  
 
   passwordText.value = password;
+} else {
+  passwordText.value = "";// it will be black when false, 
+}
 
 }
 
