@@ -6,7 +6,7 @@ var lowerCaseArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 
 var upperCaseArr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var numberArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 //3) I made 4 arrays with special characters, lower case, upper case and numers to concatenate with empty choicerArr array
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");//4) JS chooses id of a button named #generate
 
 // Write password to the #password input
 function writePassword() {
