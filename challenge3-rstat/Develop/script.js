@@ -37,10 +37,30 @@ function getPrompts(){//i created a function getPrompts that will be taking prom
   choiceArr = []; //calling array to be empty 
 characterLength = parseInt(prompt("How many characters do you want in your password?(8-128)"))// i call the variable that is 8 as minimum 
 if (isNaN(characterLength) || characterLength<8 || characterLength > 128)
-{alert("Try again. 8-128 numbers only");
-return false;
+{alert("Try again. 8-128 numbers only");//i created condition if it is not a number, or less than 8 characters or more than 128 characters, will pop the alert below and return output as false and it will stop the function 
+return false;//returns false 
+}
+if (confirm("do you want lower case in your password?")){
+  // i call a function confirm that is in node js it is like and alert but confirming certain data and put it inside if statement and then i call a variable inside if statement. the variable is an empty array to collect data. Then attach to that variable empty array a .concat method that is in node.js named .concat using a dot notation. Concat merges two or more arrays.  I connect the empty array with lower case arrays, uppercase, number and specialarr  contained previously. 
+choiceArr = choiceArr.concat(lowerCaseArr);
+}
+if (confirm("Do you want upper case in your password?")) {
+  choiceArr = choiceArr.concat(upperCaseArr);
+}
+if (confirm("Do you want numbers in your password?")) {
+  choiceArr = choiceArr.concat(numberArr);
+}
+if (confirm("Do you want special characters in your password?")) {
+  choiceArr = choiceArr.concat(specialCharArr);
+return true; //then i return an output as true if they answer yes 
 }
 
+
+
+
+
+
+}
 
 
 
