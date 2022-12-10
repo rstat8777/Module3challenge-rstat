@@ -16,11 +16,13 @@ function writePassword() {
   
 
   passwordText.value = password;
-} else {
-  passwordText.value = "";// it will be black when false, 
+ else {
+  passwordText.value = "";//5) it will be blank when false. i added else for passworText.value to make it blank when false. There was a function prepared previously that contained a variable apssword that was assigned to generate a password and the second variable in the function was passwordText that was assigned to pick id password from html that was added in textarea"
 }
 
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword);// it'll hear click of a mouse on the button and will activate writePassword function 
+
+
