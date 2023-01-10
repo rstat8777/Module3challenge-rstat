@@ -1,4 +1,4 @@
-# Module3challenge-rstat
+# Password Generator
 
 ## Description
 
